@@ -1,2 +1,7 @@
+const { showHelp } = require('./messaging');
+
 const args = process.argv.slice(2);
-args.forEach(arg => console.log(arg));
+
+if(args.includes('--help')){
+  showHelp();
+}
