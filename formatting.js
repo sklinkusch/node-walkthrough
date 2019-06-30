@@ -1,4 +1,4 @@
-const prepareString = input => {
+exports.prepareString = input => {
   const withoutSpaces = removeWhitespace(input);
   const stringArray = withoutSpaces.split(" ");
   const resultArray = stringArray.map(string => capitalizeInitial(string));
@@ -16,4 +16,3 @@ const capitalizeInitial = input => {
   return `${input.charAt(0).toUpperCase()}${input.slice(1).toLowerCase()}`;
 }
 
-console.log(prepareString('  kuala  lumpur    '));
