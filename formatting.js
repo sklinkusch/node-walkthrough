@@ -8,7 +8,7 @@ exports.prepareString = input => {
 
 const removeWhitespace = input => {
   const trimmed = input.trim();
-  const result = trimmed.replace(/\s+/," ");
+  const result = trimmed.replace(/\s+/g," ");
   return result;
 }
 
