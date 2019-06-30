@@ -1,0 +1,12 @@
+{
+  "name": "node-walkthrough-2",
+  "version": "1.0.0",
+  "description": "0. In a new file called `index.js` write a CLI application that accepts a user parameter and logs it to the console.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
