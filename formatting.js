@@ -4,5 +4,8 @@ const removeWhitespace = input => {
   return result;
 }
 
+const capitalizeInitial = input => {
+  return `${input.charAt(0).toUpperCase()}${input.slice(1).toLowerCase()}`;
+}
 
-console.log(removeWhitespace('  kuala  lumpur    '));
+console.log(capitalizeInitial('kuala  lumpur    '));
