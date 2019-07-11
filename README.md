@@ -1,4 +1,58 @@
-# Node walkthrough
+# node-walkthrough
+
+This command-line application was created by Stefan Klinkusch at Digital Career Institute in Berlin, Germany. It is a recapture of the [node-worldtime repository](https://github.com/sklinkusch/node-worldtime) and consumes the [World Time API](http://worldtimeapi.org).
+
+## Features
+
+It has three main modes:
+- showing a thank you message
+- showing a list of timezones
+- showing the current time for a given timezone
+
+## Techniques
+
+- JavaScript
+- Node.js
+
+## Manual
+
+### Setup of the package
+
+1. Clone the repository using ```git clone git@github.com:sklinkusch/node-walkthrough.git``` (SSH) or ```git clone https://github.com/sklinkusch/node-walkthrough``` (HTTPS).
+1. Move into the directory ```node-walkthrough``` and run ```npm install``` or ```yarn```.
+
+### Making requests
+
+#### Showing help text
+Type: ```node index.js --help```. The output is
+```
+Thank you for using this app.
+```
+
+#### Showing list of timezones
+Type ```node index.js --option```. The output is a list of timezones:
+```
+{ area: 'Africa', city: 'Abidjan' }
+{ area: 'Africa', city: 'Accra' }
+{ area: 'Africa', city: 'Algiers' }
+{ area: 'Africa', city: 'Bissau' }
+{ area: 'Africa', city: 'Cairo' }
+...
+{ area: 'Pacific', city: 'Tarawa' }
+{ area: 'Pacific', city: 'Tongatapu' }
+{ area: 'Pacific', city: 'Wake' }
+{ area: 'Pacific', city: 'Wallis' }
+{ area: 'WET', city: undefined }
+```
+
+#### Showing current time for a given timezone
+
+Type ```node index.js $AREA $CITY``` with ```$AREA``` as a continent/area from the list and ```$CITY``` as a matching city from the list (area and city should appear as a pair), e.g. ```node index.js europe berlin```. The app is not sensitive to the case. The output should look like
+```
+11.07.2019 10:46:39
+```
+
+## Task
 
 0. In a new file called `index.js` write a CLI application that accepts a user parameter and logs it to the console.
 
